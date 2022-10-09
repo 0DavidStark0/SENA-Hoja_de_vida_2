@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: rgb(80, 75, 75);
+}
+.hoja{
+  display: grid;
+  grid-template-columns: 30% 70%;
+  background-color: rgb(3, 3, 3);
+  margin: auto;
+  width: 65%;
+  border: 1px solid black;
+}
+.seccion1{
+  background-color: azure;
+}
+.seccion1__foto{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.seccion1__foto img{
+  position: absolute;
+  top: 15px;
+  left: 31%;
+  /* width: 60%; */
+  width: 12%;
+  margin: 40px 0 20px;
+  height: auto;
+}
+.seccion1__texto{
+  margin: 250px 30px 30px;
+  font-family: 'Poppins', sans-serif;
+}
+.seccion1__texto-nombre {
+  position: absolute;
+  top: 90px;
+  left: 45%;
+  font-size: 25px;
+}
+.seccion1__texto-nombre h2{
+  font-size: 50px;
+  color: aqua;
+}
+.seccion1__texto-info{
+  margin: 20px 0;
+  font-size: 12px;
+}
+.seccion1__texto-info h3{
+  font-size: 15px;
+  margin-bottom:10px;
+  color: rgb(82, 70, 158);
+}
+.seccion1__texto-info ul{
+  list-style: none;
+}
+.seccion2{
+  background-color: slateblue;
+  padding: 200px 50px 35px;
+}
+.seccion2 h3{
+  background-color: azure;
+  padding-left: 10px;
+  border-radius: 0 0 50px;
+}
+.seccion2 h5{
+  font-size: 16px;
+  margin-top: 15px;
+}
+.seccion2 h6{
+  margin-top: 5px;
+}
+.seccion2 ul{
+  font-size: 12px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.seccion2__info{
+  margin: 40px 0;
+}
+
+@media screen and ( max-width:900px){
+  .hoja{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .seccion1__texto{
+    text-align: center;
+  }
+  .seccion2{
+    background-color: slateblue;
+    padding: 50px;
+  }
+  .seccion1__foto img{
+    position: initial;
+    width: 52%;
+    margin: 20px;
+    height: auto;
+  }
+  .seccion1__texto-nombre {
+    position: unset;
+    top: 0px;
+    margin: 0px 20px;
+    font-size: 25px;
+  }
+  .seccion1__texto{
+    margin: 20px 30px 30px;
+  }
+}
+@media screen and ( max-width:1000px){
+  .seccion1__texto-nombre h2{
+    font-size: 45px;
+    color: aqua;
+  }
+}
+
